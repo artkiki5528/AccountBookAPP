@@ -7,15 +7,46 @@
 //
 
 import UIKit
+import  SQLite3
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    //宣告資料庫連線指標
+    var db:OpaquePointer?   //存放資料庫連線的資料
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        //Step 1:取得app的檔案管理員
+        let fileManager = FileManager.default
+        //Step 2:取得捆包中資料庫檔案的路徑(❗️注意：此路徑的檔案是惟讀，不可寫入資料！)
+        let sourceFile = Bundle.main.path(forResource: "accountbook3", ofType: "sqlite3")!
+        print("捆包中資料庫檔案的路徑：\(sourceFile)")
+        
+        //Step 3:取得應用程式的可讀寫路徑(根目錄下的Documentsy 資料夾)
+        let destinationFile = NSHomeDirectory() + "/Documents/accountbook3.sqlite3"
+        print("應用程式的可讀寫路徑\(destinationFile)")
+        //Step 4:從來源路徑將資料庫檔案複製到“App根目錄下的Documents資料夾“
+        if !fileManager.fileExists(atPath: destinationFile)//如果檔案不存在才做複製的動作
+        {
+            //將捆包中的資料庫檔案複製到“App根目錄下的Documents資料夾“
+            try! fileManager.copyItem(atPath: sourceFile, toPath: destinationFile)
+        }
+        //開啟資料庫連線
+        if sqlite3_open(destinationFile, &db) == SQLITE_OK
+        {
+            print("資料庫開啟成功")
+        }
+        else
+        {
+            print("資料庫開啟失敗")
+            db = nil
+        }
+        
+        
+        
+        
+        
         return true
     }
 

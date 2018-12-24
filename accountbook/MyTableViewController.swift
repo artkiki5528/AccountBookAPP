@@ -55,6 +55,9 @@ class MyTableViewController: UITableViewController {
         self.tableView.refreshControl = UIRefreshControl()
         //設定下拉更新元件對應的value change事件，與呼叫的函式
         self.tableView.refreshControl?.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        
+         self.navigationItem.title = "帳本"
+        
 //        //設定下拉更新元件的文字
 //            self.tableView.refreshControl?.attributedTitle = NSAttributedString(string: "更新中...") as! [[String : Any?]]
         
@@ -70,7 +73,7 @@ class MyTableViewController: UITableViewController {
      print("即將由換頁線換頁")
      //取得詳細頁面的執行實體（執行參數傳遞）
      let detailVC = segue.destination as!DetailViewController
-     detailVC.myTableViewController = self
+        detailVC.myTableViewController = self
      }
     
     
@@ -304,7 +307,7 @@ class MyTableViewController: UITableViewController {
     //事件：哪一個儲存格被點擊了
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        print("第\(indexPath.row)列被點選:\(arrTable[indexPath.row]["time"] as! String)")
+        print("第\(indexPath.row)列被點選:\(arrTable[indexPath.row]["shoppingdate"] as! String)")
         currentRow = indexPath.row
     }
     

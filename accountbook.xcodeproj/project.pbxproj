@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B026019921BF5DC60083C105 /* SentyTEA.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B026019821BF5DC60083C105 /* SentyTEA.ttf */; };
+		B026019B21BF5F160083C105 /* SentyPea.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B026019A21BF5F160083C105 /* SentyPea.ttf */; };
+		B026019D21BF5F6A0083C105 /* SentyCreamPuff.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B026019C21BF5F6A0083C105 /* SentyCreamPuff.ttf */; };
+		B026019F21BF66460083C105 /* HonyaJi-Re.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B026019E21BF66460083C105 /* HonyaJi-Re.ttf */; };
+		B02601A121BF67090083C105 /* KTEGAKI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B02601A021BF67080083C105 /* KTEGAKI.ttf */; };
+		B02601A321BF689B0083C105 /* DFHsiuW3-B5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B02601A221BF689B0083C105 /* DFHsiuW3-B5.ttf */; };
+		B02601A521BF6B0F0083C105 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02601A421BF6B0F0083C105 /* DetailViewController.swift */; };
+		B02601AB21BF9D650083C105 /* accountbook3.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = B02601AA21BF9D640083C105 /* accountbook3.sqlite3 */; };
 		B0E6250021BE2B1900A53B89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E624FF21BE2B1900A53B89 /* AppDelegate.swift */; };
 		B0E6250221BE2B1900A53B89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E6250121BE2B1900A53B89 /* ViewController.swift */; };
 		B0E6250521BE2B1900A53B89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E6250321BE2B1900A53B89 /* Main.storyboard */; };
 		B0E6250721BE2B1A00A53B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E6250621BE2B1A00A53B89 /* Assets.xcassets */; };
 		B0E6250A21BE2B1A00A53B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E6250821BE2B1A00A53B89 /* LaunchScreen.storyboard */; };
+		B0E6251221BE2B4700A53B89 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E6251121BE2B4700A53B89 /* MyTableViewController.swift */; };
+		B0E6251621BE2C3E00A53B89 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E6251521BE2C3E00A53B89 /* MyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B026019821BF5DC60083C105 /* SentyTEA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SentyTEA.ttf; sourceTree = "<group>"; };
+		B026019A21BF5F160083C105 /* SentyPea.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SentyPea.ttf; sourceTree = "<group>"; };
+		B026019C21BF5F6A0083C105 /* SentyCreamPuff.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SentyCreamPuff.ttf; sourceTree = "<group>"; };
+		B026019E21BF66460083C105 /* HonyaJi-Re.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HonyaJi-Re.ttf"; sourceTree = "<group>"; };
+		B02601A021BF67080083C105 /* KTEGAKI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KTEGAKI.ttf; sourceTree = "<group>"; };
+		B02601A221BF689B0083C105 /* DFHsiuW3-B5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DFHsiuW3-B5.ttf"; sourceTree = "<group>"; };
+		B02601A421BF6B0F0083C105 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B02601AA21BF9D640083C105 /* accountbook3.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = accountbook3.sqlite3; sourceTree = "<group>"; };
 		B0E624FC21BE2B1900A53B89 /* accountbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = accountbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E624FF21BE2B1900A53B89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0E6250121BE2B1900A53B89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,8 @@
 		B0E6250621BE2B1A00A53B89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0E6250921BE2B1A00A53B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0E6250B21BE2B1A00A53B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0E6251121BE2B4700A53B89 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		B0E6251521BE2C3E00A53B89 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +74,22 @@
 		B0E624FE21BE2B1900A53B89 /* accountbook */ = {
 			isa = PBXGroup;
 			children = (
+				B02601AA21BF9D640083C105 /* accountbook3.sqlite3 */,
 				B0E624FF21BE2B1900A53B89 /* AppDelegate.swift */,
 				B0E6250121BE2B1900A53B89 /* ViewController.swift */,
 				B0E6250321BE2B1900A53B89 /* Main.storyboard */,
+				B02601A221BF689B0083C105 /* DFHsiuW3-B5.ttf */,
+				B02601A021BF67080083C105 /* KTEGAKI.ttf */,
+				B026019E21BF66460083C105 /* HonyaJi-Re.ttf */,
+				B026019A21BF5F160083C105 /* SentyPea.ttf */,
+				B026019C21BF5F6A0083C105 /* SentyCreamPuff.ttf */,
+				B026019821BF5DC60083C105 /* SentyTEA.ttf */,
 				B0E6250621BE2B1A00A53B89 /* Assets.xcassets */,
 				B0E6250821BE2B1A00A53B89 /* LaunchScreen.storyboard */,
 				B0E6250B21BE2B1A00A53B89 /* Info.plist */,
+				B0E6251121BE2B4700A53B89 /* MyTableViewController.swift */,
+				B0E6251521BE2C3E00A53B89 /* MyCell.swift */,
+				B02601A421BF6B0F0083C105 /* DetailViewController.swift */,
 			);
 			path = accountbook;
 			sourceTree = "<group>";
@@ -122,9 +152,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B026019F21BF66460083C105 /* HonyaJi-Re.ttf in Resources */,
+				B02601A121BF67090083C105 /* KTEGAKI.ttf in Resources */,
+				B02601A321BF689B0083C105 /* DFHsiuW3-B5.ttf in Resources */,
 				B0E6250A21BE2B1A00A53B89 /* LaunchScreen.storyboard in Resources */,
+				B026019921BF5DC60083C105 /* SentyTEA.ttf in Resources */,
 				B0E6250721BE2B1A00A53B89 /* Assets.xcassets in Resources */,
+				B02601AB21BF9D650083C105 /* accountbook3.sqlite3 in Resources */,
 				B0E6250521BE2B1900A53B89 /* Main.storyboard in Resources */,
+				B026019B21BF5F160083C105 /* SentyPea.ttf in Resources */,
+				B026019D21BF5F6A0083C105 /* SentyCreamPuff.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0E6250221BE2B1900A53B89 /* ViewController.swift in Sources */,
+				B0E6251621BE2C3E00A53B89 /* MyCell.swift in Sources */,
+				B02601A521BF6B0F0083C105 /* DetailViewController.swift in Sources */,
+				B0E6251221BE2B4700A53B89 /* MyTableViewController.swift in Sources */,
 				B0E6250021BE2B1900A53B89 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
